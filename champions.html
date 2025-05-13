@@ -29,14 +29,14 @@
         <tr><td>1938–39</td><td>APOEL Nicosia</td></tr>
         <tr><td>1939–40</td><td>APOEL Nicosia</td></tr>
         <tr><td>1940–41</td><td>AEL Limassol</td></tr>
-        <tr><td>1940–44</td><td>Not Held (WWII)</td></tr>
+        <tr><td>1940–44</td><td><em>Not Held (WW II)</em></td></tr>
         <tr><td>1944–45</td><td>EPA Larnaca</td></tr>
         <tr><td>1945–46</td><td>EPA Larnaca</td></tr>
         <tr><td>1946–47</td><td>APOEL Nicosia</td></tr>
         <tr><td>1947–48</td><td>APOEL Nicosia</td></tr>
         <tr><td>1948–49</td><td>APOEL Nicosia</td></tr>
         <tr><td>1949–50</td><td>Anorthosis Famagusta</td></tr>
-        <tr><td>1950–51</td><td>Çetinkaya Türk</td></tr>
+        <tr><td>1950–51</td><td>Çetinkaya</td></tr>
         <tr><td>1951–52</td><td>APOEL Nicosia</td></tr>
         <tr><td>1952–53</td><td>AEL Limassol</td></tr>
         <tr><td>1953–54</td><td>Pezoporikos Larnaca</td></tr>
@@ -77,6 +77,38 @@
         <tr><td>1988–89</td><td>Omonia</td></tr>
         <tr><td>1989–90</td><td>APOEL</td></tr>
         <tr><td>1990–91</td><td>Apollon Limassol</td></tr>
+        <tr><td>1991–92</td><td>APOEL</td></tr>
+        <tr><td>1992–93</td><td>Omonia</td></tr>
+        <tr><td>1993–94</td><td>Apollon Limassol</td></tr>
+        <tr><td>1994–95</td><td>Anorthosis Famagusta</td></tr>
+        <tr><td>1995–96</td><td>APOEL</td></tr>
+        <tr><td>1996–97</td><td>Anorthosis Famagusta</td></tr>
+        <tr><td>1997–98</td><td>Anorthosis Famagusta</td></tr>
+        <tr><td>1998–99</td><td>Anorthosis Famagusta</td></tr>
+        <tr><td>1999–00</td><td>Anorthosis Famagusta</td></tr>
+        <tr><td>2000–01</td><td>Omonia</td></tr>
+        <tr><td>2001–02</td><td>APOEL</td></tr>
+        <tr><td>2002–03</td><td>Omonia</td></tr>
+        <tr><td>2003–04</td><td>APOEL</td></tr>
+        <tr><td>2004–05</td><td>Anorthosis Famagusta</td></tr>
+        <tr><td>2005–06</td><td>Apollon Limassol</td></tr>
+        <tr><td>2006–07</td><td>APOEL</td></tr>
+        <tr><td>2007–08</td><td>Anorthosis Famagusta</td></tr>
+        <tr><td>2008–09</td><td>APOEL</td></tr>
+        <tr><td>2009–10</td><td>Omonia</td></tr>
+        <tr><td>2010–11</td><td>APOEL</td></tr>
+        <tr><td>2011–12</td><td>AEL Limassol</td></tr>
+        <tr><td>2012–13</td><td>APOEL</td></tr>
+        <tr><td>2013–14</td><td>APOEL</td></tr>
+        <tr><td>2014–15</td><td>APOEL</td></tr>
+        <tr><td>2015–16</td><td>APOEL</td></tr>
+        <tr><td>2016–17</td><td>APOEL</td></tr>
+        <tr><td>2017–18</td><td>APOEL</td></tr>
+        <tr><td>2018–19</td><td>APOEL</td></tr>
+        <tr><td>2019–20</td><td><em>Cancelled</em></td></tr>
+        <tr><td>2020–21</td><td>Omonia</td></tr>
+        <tr><td>2021–22</td><td>Apollon Limassol</td></tr>
+        <tr><td>2022–23</td><td>Aris</td></tr>
         <tr><td>2023–24</td><td>APOEL Nicosia</td></tr>
         <tr><td>2024–25</td><td>Paphos FC</td></tr>
       </tbody>
@@ -97,6 +129,17 @@
     fetch('footer.html')
       .then(res => res.text())
       .then(data => document.getElementById('footer').innerHTML = data);
+
+    // Reverse table 
+    // Select the table body
+    const tableBody = document.querySelector("table tbody");
+    
+    // Get all rows and reverse them
+    const rows = Array.from(tableBody.rows).reverse();
+
+    // Remove and re-append rows in reverse order
+    rows.forEach(row => tableBody.appendChild(row));
+    
   </script>
   
 </body>
