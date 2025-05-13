@@ -3,50 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      display: flex;
-      background-color: #f9f9f9;
-    }
-
-    h1 {
-      color: #003366;
-    }
-
-    table {
-      width: 80%;
-      margin: 20px auto;
-      border-collapse: collapse;
-      margin-top: 20px;
-      background-color: white;
-    }
-
-    th, td {
-      padding: 10px 15px;
-      border: 1px solid #ccc;
-      text-align: left;
-    }
-
-    th {
-      background-color: #e0e0e0;
-    }
-
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
+  
 <body>
-
+  <div id="sidebar"></div>
+  
   <div class="main">
+    <div id="header"></div>
+    
     <h1>Cyprus League Champions (1934–Today)</h1>
-    <p>A full list of First Division champions from the league's founding season through the latest title holder.</p>
 
     <table>
       <thead>
@@ -78,10 +44,23 @@
       </tbody>
     </table>
 
-    <footer>
-      &copy; 2025 Cyprus Football Stats
-    </footer>
+    <div id="footer"></div>
   </div>
 
+  <script>
+    fetch('sidebar.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('sidebar').innerHTML = data);
+
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+  
 </body>
+  
 </html>
