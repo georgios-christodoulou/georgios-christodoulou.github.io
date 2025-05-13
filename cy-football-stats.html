@@ -12,6 +12,37 @@
       padding: 0;
     }
 
+    /* Sidebar styles */
+    .sidebar {
+      width: 220px;
+      background-color: #004b8d;
+      height: 100vh;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      overflow-y: auto;
+      padding-top: 20px;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #005fa3;
+    }
+
     header {
       background-color: #004b8d;
       color: white;
@@ -62,6 +93,17 @@
     <p>A Different Eye Into Cyprus Football</p>
   </header>
 
+<!-- Sidebar -->
+  <div class="sidebar">
+    <h2>⚽ Menu</h2>
+    <a href="cy-football-stats.html">League Stats</a>
+    <a href="#">Top Scorers</a>
+    <a href="#">Teams</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
   <p>
       Η ιστοσελίδα αυτή 
     </p>
@@ -69,5 +111,6 @@
   <footer>
     <p>&copy; 2025 Cyprus Football Stats </p>
   </footer>
+ </div>
 </body>
 </html>
