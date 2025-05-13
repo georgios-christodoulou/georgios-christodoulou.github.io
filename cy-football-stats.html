@@ -5,131 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cyprus Football Stats</title>
   <link rel="stylesheet" href="style.css" />
-  <!--
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      display: flex;
-    }
-
-    
-    .sidebar {
-      width: 220px;
-      background-color: #004b8d;
-      height: 100vh;
-      color: white;
-      position: fixed;
-      top: 0;
-      left: 0;
-      overflow-y: auto;
-      padding-top: 20px;
-    }
-
-    .sidebar h2 {
-      text-align: center;
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-    }
-
-    .sidebar a {
-      display: block;
-      color: white;
-      padding: 12px 20px;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-
-    .sidebar a:hover {
-      background-color: #005fa3;
-    }
-
-  /* Main content styles */
-    .main {
-      margin-left: 220px;
-      padding: 20px;
-      flex: 1;
-    }
-    
-    header {
-      background-color: #004b8d;
-      color: white;
-      padding: 1.5rem 1rem;
-      text-align: center;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    h2 {
-      margin-top: 0;
-      color: #004b8d;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-      background-color: white;
-    }
-
-    th, td {
-      padding: 12px 15px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-    }
-
-    th {
-      background-color: #e0e0e0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #eee;
-      margin-top: 40px;
-      font-size: 0.9rem;
-    }
-  </style>
-  -->
 </head>
+  
 <body>
-
   <div id="sidebar"></div>
-<!-- Sidebar 
-  <div class="sidebar">
-    <h2>⚽ </h2>
-    <a href="cy-football-stats.html">League Stats</a>
-    <a href="champions.html">Cyprus League Champions</a>
-    <a href="#">Teams</a>
-    <a href="#">Contact</a>
-  </div>
--->
-  <!-- Main Content -->
+
   <div class="main">
-    <header>
-      <h1>Cyprus Football Statistics</h1>
-      <p>A Different Eye Into Cyprus Football</p>
-    </header>
+    <div id="header"></div>
 
     <h1>Cyprus Football Statistics</h1>
     <p>Blah blah </p>
   
-  <footer>
-    <p>&copy; 2025 Cyprus Football Stats </p>
-  </footer>
-    
- </div>
+    <div id="footer"></div>
+   </div>
 
   <script>
     fetch('sidebar.html')
       .then(res => res.text())
       .then(data => document.getElementById('sidebar').innerHTML = data);
 
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
   </script>
   
 </body>
