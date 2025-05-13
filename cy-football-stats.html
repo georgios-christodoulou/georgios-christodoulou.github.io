@@ -98,8 +98,9 @@
   -->
 </head>
 <body>
-  
-<!-- Sidebar -->
+
+  <div id="sidebar"></div>
+<!-- Sidebar 
   <div class="sidebar">
     <h2>⚽ </h2>
     <a href="cy-football-stats.html">League Stats</a>
@@ -107,7 +108,7 @@
     <a href="#">Teams</a>
     <a href="#">Contact</a>
   </div>
-
+-->
   <!-- Main Content -->
   <div class="main">
     <header>
@@ -123,6 +124,13 @@
   </footer>
     
  </div>
+
+  <script>
+    fetch('sidebar.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('sidebar').innerHTML = data);
+
+  </script>
   
 </body>
   
