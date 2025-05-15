@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="sidebar"></div>
+  
+  <div class="main">
+    <div id="header"></div>
+
+    <h3 style="text-align: center;">Πρωτάθλημα 12 ή 14 ομάδων; </h3>
+
+    <p>
+      Τα τελευταία χρόνια γίνεται πολλή φασαρία για τον αριθμό των ομάδων που πρέπει να αγωνίζονται στο ποδοσφαιρικό πρωτάθλημα Α’ κατηγορίας. 
+      Παρόλο που υπάρχουν αρκετά δεδομένα που πρέπει να ληφθούν υπόψιν, ένας από τους σημαντικότερους παράγοντες είναι η ανταγωνιστικότητα ενός πρωταθλήματος με 14 ή 12 ομάδες. 
+      Πως όμως μπορούμε να μετρήσουμε την ανταγωνιστικότητα του πρωταθλήματος;
+    </p>
+  </main>
+
+</div>
+    <div id="footer"></div>
+  </div>
+
+  <script>
+    fetch('sidebar.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('sidebar').innerHTML = data);
+
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+
+</body>
+</html>
+
