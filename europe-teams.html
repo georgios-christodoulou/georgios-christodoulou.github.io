@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+  
+<body>
+  <div id="sidebar"></div>
+  
+  <div class="main">
+    <div id="header"></div>
+    <h3 style="text-align: center;">Κύπελλο Πρωταθλητριών / Champions League</h3>
+    <p>
+      <li> Οι Κυπριακές ομάδες συμμετέχουν στο κύπελλο πρωταθλητριών (αργότερα Champions League) από το 1963. Πρώτη ομάδα που αγωνίστηκε ήταν η Ανόρθωση.</li>
+      <li> Το ΑΠΟΕΛ συμμετείχε 4 φορές στην φάση των ομίλων καταφέρνωντας τη μια φορά να προκριθεί μέχρι και τα προημιτελικά. </li>
+      <li> Η Ανόρθωση ήταν η πρώτη κυπριακή ομάδα που συμμετείχε σε ομίλους του Champion League. </li>
+    </p>
+
+    <table style="margin: auto">
+      <thead>
+        <tr>
+          <th>Ομάδα</th>
+          <th>Αγώνες</th>
+          <th>Νίκες / Ισοπαλίες / Ηττες</th>
+          <th>Τέρματα Υπερ - Κατά</th>
+          <th>Προκρίσεις (σε νοκ-άουτ παιχνίδια)</th>
+          <th>Παρουσίες σε ομίλους</th>
+        </tr>
+      </thead>
+
+      <tbody>
+          <tr> <td>ΑΠΟΕΛ</td>       <td>94</td> <td>29 / 25 / 40</td> <td>99 - 122</td> <td>20</td> <td>4 (2009 - 10, 2011 - 12, 2014 - 15, 2017 - 18)</td> </tr>
+          <tr> <td>Ομόνοια</td>     <td>55</td> <td>18 / 8 / 29</td>  <td>66 - 111</td> <td>8</td>  <td>- </td> </tr>
+          <tr> <td>Ανόρθωση</td>    <td>36</td> <td>12 / 9 / 15</td>  <td>47 - 44</td>  <td>8</td>  <td>1 (2008 - 09)</td> </tr>
+          <tr> <td>ΑΕΛ</td>         <td>10</td> <td>5 / 1 / 4</td>    <td>8 - 18</td>   <td>2</td>  <td>- </td> </tr>
+          <tr> <td>Απόλλων</td>     <td>8</td>  <td>2 / 1 / 5</td>    <td>7 - 13</td>   <td>1</td>  <td>- </td> </tr>
+          <tr> <td>Ολυμπιακός</td>  <td>6</td>  <td>0 / 1 / 5</td>    <td>4 - 36</td>   <td>0</td>  <td>- </td> </tr>
+          <tr> <td>Άρης</td>        <td>4</td>  <td>2 / 0 / 2</td>    <td>12 - 8</td>   <td>1</td>  <td>- </td> </tr>
+          <tr> <td>ΑΕΚ</td>         <td>2</td>  <td>0 / 2 / 0</td>    <td>2 - 2</td>    <td>0</td>  <td>- </td> </tr>
+          <tr> <td>Πεζοπορικός</td> <td>2</td>  <td>0 / 0 / 2</td>    <td>2 - 7</td>    <td>0</td>  <td>- </td> </tr>
+          <tr> <td>ΕΠΑ</td>         <td>2</td>  <td>0 / 0 / 2</td>    <td>0 - 16</td>   <td>0</td>  <td>- </td> </tr>
+          <tr style="border-top: 5px solid black;"> <td colspan="6"></td> </tr>
+          <tr> <td>Σύνολο</td>      <td>219</td> <td>68 / 47 / 104</td>    <td>247 - 377</td>   <td>40</td>  <td>5 </td> </tr>
+        
+      </tbody>
+    </table>
+      
+    <h3 style="text-align: center;">Κύπελλο Κυπελλούχων</h3>
+  </main>
+
+
+    <div id="footer"></div>
+  </div>
+
+  <script>
+    fetch('sidebar.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('sidebar').innerHTML = data);
+
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+    
+  </script>
+  
+</body>
+  
+</html>
