@@ -68,9 +68,13 @@ footer {
 }
 
 .container {
+    width: 90%;
+    margin: 0 auto;
+    /*
     max-width: 1000px;
     margin: auto;
     padding: 20px;
+  */
   }
 
 table {
@@ -79,6 +83,21 @@ table {
     margin-top: 20px;
     background-color: white;
   }
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px;
+  }
+}
 
   /* Sidebar styles */
   .sidebar {
@@ -110,3 +129,8 @@ table {
     .sidebar a:hover {
       background-color: #005fa3;
     }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
