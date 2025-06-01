@@ -83,7 +83,7 @@ table {
     margin-top: 20px;
     background-color: white;
   }
-
+/*
 @media (max-width: 600px) {
   body {
     font-size: 16px;
@@ -98,7 +98,7 @@ table {
     font-size: 14px;
   }
 }
-
+*/
   /* Sidebar styles */
   .sidebar {
       width: 220px;
