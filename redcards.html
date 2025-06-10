@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+  
+<body>
+  <div id="sidebar"></div>
+  
+  <div class="main">
+    <div id="header"></div>
+
+    <p>
+      
+    </p>
+
+    <table style="margin: auto">
+      <thead>
+        <tr> <th colspan="6">Σεζόν 2019 - 20 μέχρι 2024 - 25</th> </tr>
+        <tr>
+          <th>Ομάδα</th>
+          <th>Βαθμοί / Αγώνα χωρίς κόκκινη κάρτα</th>
+          <th>Βαθμοί / Αγώνα με πλεονέκτημα κόκκινης κάρτας</th>
+          <th>Βαθμοί / Αγώνα με μειονέκτημα κόκκινης κάρτας</th>
+          <th>Αγωνιστικά λεπτά με πλεονέκτημα κόκκινης κάρτας</th>
+          <th>Αγωνιστικά λεπτά με μειονέκτημα κόκκινης κάρτας</th>
+        </tr>
+      </thead>
+
+      <tbody>
+          <tr> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> </tr>
+          <tr> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> </tr>
+          <tr> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> </tr>
+          <tr> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> </tr>
+          <tr> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> </tr>
+          <tr> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> </tr>
+          <tr> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> </tr>
+          <tr> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> </tr>
+          <tr> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> </tr>
+          <tr> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> </tr>
+          <tr> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td> </tr>
+
+      </tbody>
+    </table>
+
+    </main>
+
+
+    <div id="footer"></div>
+  </div>
+
+  <script>
+    fetch('sidebar.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('sidebar').innerHTML = data);
+
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+    
+  </script>
+  
+</body>
+  
+</html>
+
+      
