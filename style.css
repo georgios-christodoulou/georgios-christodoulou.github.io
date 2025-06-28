@@ -75,11 +75,10 @@ footer {
     max-width: 1000px;
     margin: auto;
     padding: 20px;
-  
   }
 
   .container img {
-      width: 50px; /* adjust size as needed */
+      width: 10px;
       margin-right: 15px;
   }
 
