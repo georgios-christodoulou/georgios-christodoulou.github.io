@@ -78,6 +78,11 @@ footer {
   
   }
 
+  .container img {
+      width: 50px; /* adjust size as needed */
+      margin-right: 15px;
+  }
+
 table {
     width: 80%;
     border-collapse: collapse;
